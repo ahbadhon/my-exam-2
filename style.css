@@ -32,15 +32,15 @@ main {
 }
 
 .courses {
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 24px;
  /* bordeline */
  margin-right:5%;
  margin-left: 5%;
+ margin-bottom: 20px;
  padding-left:5Px;
- margin-bottom: 5px;
- box-shadow: 30px 30px 30px 30px gray;
+ box-shadow: 5px 5px 20px gray;
 }
 .course .course-banner img {
   width: 224px;
@@ -50,6 +50,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
 }
 .fa-star {
   font-size: 12px;
@@ -90,3 +91,4 @@ main {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+/* footer */
