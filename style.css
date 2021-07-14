@@ -70,7 +70,7 @@ body{
 .player{
     height: 500px;
     width: 330px;
-    padding-left: 30px;
+    padding-left:30px;
     border: 1px solid transparent;
     box-shadow: 0px 0px 40px 0px #00000026;
    
@@ -92,7 +92,20 @@ body{
     font-size: 16px;
     line-height: 26px;
     color:#6C6C6C;
+
 } 
+/* hight light */
+.mid-font {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-font {
+  width: 10em;
+}
+
  /* resposible for mobile screen */
  @media only screen and (max-width: 600px){
 .top-part{
