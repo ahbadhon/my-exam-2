@@ -17,7 +17,7 @@ body{
     width: 485px;
     height: 230px;
 }
-.video-link a{
+.button-link a{
     text-decoration: none;
     width: 190px;
     height: 44px;
@@ -25,12 +25,11 @@ body{
     padding: 10px 10px 10px 12px;
     margin-left: 3px;
 }
- /* transistion effect on span element */
-.video-link:hover span{
+.button-link:hover span{
     color:black;
     transition: color 2s ease-in-out;
 }
-.video-link span, .fa-arrow-right{
+.button-link span, .button-work{
     color:#FFFFFF;
     font-size: 16px;
     font-weight: 500;
@@ -45,12 +44,9 @@ body{
     
   
 }
- /* transistion effect on banner */
 .top-right:hover img{
-    transform: scale(1.5);
-    transition: transform 3s ease-in-out;
-    
-    
+  transform: scale(1.5);
+  transition: transform 3s ease-in-out;
 }
 
 .players-info{
@@ -58,14 +54,13 @@ body{
     flex-wrap: wrap;
     flex-direction: column;
     align-content: center;
-    padding-right: 400px;
 }
 .players{
     width:60%;
     display: grid;
     row-gap: 30px;
     column-gap: 30px;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns:1fr 1fr 1fr;
     margin-top: 70px;
    
 
@@ -97,4 +92,70 @@ body{
     line-height: 26px;
     color:#6C6C6C;
 }
- 
+    /* resposible for mobile screen */
+    @media only screen and (max-width: 600px){
+      .top-part{
+          flex-direction: column;
+          height: max-content;
+      }
+      .top-left h1{
+          font-size: 30px;
+          width: 250px;
+          height: fit-content;
+          
+      }
+      .top-right{
+          margin-top: 40px;
+      }
+      .top-right img{
+          width:250px;
+          height: 250px;
+      }
+      .players{
+          grid-template-columns: repeat(1,1fr);
+       }
+       .football-logo img{
+           width: 300px;
+       }
+  }
+   /* resposible for ipad,tab */
+  @media only screen and (min-width: 601px) and (max-width: 992px){
+      .top-part{
+          width: max-content;
+      }
+      .top-left {
+          padding-left: 150px;
+  
+      }
+      .top-right img{
+      width: 500px;        
+      }
+      .players{
+          grid-template-columns: repeat(2,1fr);
+       }
+  }
+/* footer */
+ footer{
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 120px;
+}
+footer p{
+  margin-left: 110px;
+}
+.football-logo img{
+  width: 480px;
+  height: 110px;
+}
+/* font awesome icons area */
+.social-sites {
+  display: flex;
+  height: 32px;
+  width: 32px;
+}
+.social-sites a{
+ margin-right: 14px;
+ color: #969BAB;
+}
